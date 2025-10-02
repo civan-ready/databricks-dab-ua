@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession, DataFrame
 
 
 def get_taxis(spark: SparkSession) -> DataFrame:
-    return spark.read.table("main.default.customer_satisfaction")
+    return spark.read.table("samples.nyctaxi.trips")
 
 
 # Create a new Databricks Connect session. If this fails,
